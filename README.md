@@ -126,44 +126,44 @@ def feature_engineering_continuous(df):
 ```
 2. Regional Climate Adaptation
 
-ET₀ calculations calibrated for Tadla's semi-arid climate
+- ET₀ calculations calibrated for Tadla's semi-arid climate
 
-Rainfall patterns specific to Moroccan agricultural zones
+- Rainfall patterns specific to Moroccan agricultural zones
 
-Seasonal adjustments for Mediterranean climate variations
+- Seasonal adjustments for Mediterranean climate variations
 
-Crop coefficients validated for Moroccan sugar beet varieties
+- Crop coefficients validated for Moroccan sugar beet varieties
 
 3. Advanced LSTM Architecture
    
-Bidirectional processing of temporal patterns
+- Bidirectional processing of temporal patterns
 
-Multiple regularization techniques preventing overfitting
+- Multiple regularization techniques preventing overfitting
 
-Adaptive learning rate with ReduceLROnPlateau
+- Adaptive learning rate with ReduceLROnPlateau
 
-Early stopping based on validation loss
+- Early stopping based on validation loss
 
 ### Results Analysis
 Model Performance in Tadla Context
-Excellent Binary Classification: 98.04% accuracy in identifying irrigation needs
+- Excellent Binary Classification: 98.04% accuracy in identifying irrigation needs
 
-Good Explanatory Power: R² of 0.522 explains majority of variance in regional conditions
+- Good Explanatory Power: R² of 0.522 explains majority of variance in regional conditions
 
-Reasonable Prediction Error: MAPE of 38.7% on non-zero values
+- Reasonable Prediction Error: MAPE of 38.7% on non-zero values
 
-Strong Generalization: Consistent performance across train/val/test sets
+- Strong Generalization: Consistent performance across train/val/test sets
 
 ### Agricultural Impact for Moroccan Agriculture
-Water Optimization: Critical for Tadla's limited water resources
+*Water Optimization*: Critical for Tadla's limited water resources
 
-Crop Health: Maintains optimal soil moisture for sugar beet production
+*Crop Health*: Maintains optimal soil moisture for sugar beet production
 
-Labor Efficiency: Reduces manual monitoring in large-scale farms
+*Labor Efficiency*: Reduces manual monitoring in large-scale farms
 
-Economic Benefits: Optimized water usage reduces operational costs
+*Economic Benefits*: Optimized water usage reduces operational costs
 
-Sustainability: Aligns with Morocco's agricultural development strategy
+*Sustainability:* Aligns with Morocco's agricultural development strategy
 
 ### Usage Examples
 Complete Pipeline Execution with Tadla Data
@@ -178,32 +178,31 @@ model, history, results = run_complete_pipeline(
 
 ````
 ### Model Interpretation
-Regional Feature Importance
+#### Regional Feature Importance
 The model successfully learned Tadla-specific patterns:
 
-Seasonal ET₀ variations in semi-arid climate
+- Seasonal ET₀ variations in semi-arid climate
 
-Rainfall effectiveness in Moroccan agricultural context
+- Rainfall effectiveness in Moroccan agricultural context
 
-Sugar beet growth cycles adapted to local conditions
+- Sugar beet growth cycles adapted to local conditions
 
-Micro-climate variations across the 3 stations
 
 ### Regional Significance
 This project addresses critical water management challenges in Morocco's agricultural sector:
 
-Water Scarcity: Tadla region faces increasing water stress
+*Water Scarcity*: Tadla region faces increasing water stress
 
-Climate Change: Adapting to changing precipitation patterns
+*Climate Change*: Adapting to changing precipitation patterns
 
-Food Security: Optimizing water use for staple crop production
+*Food Security*: Optimizing water use for staple crop production
 
 Economic Development: Supporting Morocco's agricultural exports
 
 ### Citation
 If you use this project in your research, please cite:
 
-bibtex
+```bibtex
 @software{smart_irrigation_2023,
   title = {Smart Irrigation Forecasting with LSTM: Tadla, Morocco Case Study},
   author = {Elghazouani khadija},
@@ -211,23 +210,27 @@ bibtex
   url = {https://github.com/elghazouanikhadija/smart-irrigation-forecasting},
   note = {Meteorological data from 3 stations in Tadla region, Morocco (2017-2024)}
 }
+```
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Acknowledgments
-Office Régional de Mise en Valeur Agricole de Tadla (ORMVAT) for meteorological data
 
-Direction de la Météorologie Nationale (Morocco) for climate data support
+- Office Régional de Mise en Valeur Agricole de Tadla (ORMVAT) for meteorological data
 
-Farmers and Agricultural Cooperatives in Tadla for practical insights
+- Direction de la Météorologie Nationale (Morocco) for climate data support
+
+- Farmers and Agricultural Cooperatives in Tadla for practical insights
 
 <div align="center">
+  
 Star this repository if you find it useful!
 
 Building sustainable agriculture in Morocco through artificial intelligence
 Precision. Efficiency. Sustainability. National Impact.
 
 </div>
+
 Last updated: November 2024
 Performance metrics based on Tadla region test set evaluation
 *Data period: 2017-2024 from 3 meteorological stations in Tadla, Morocco*
