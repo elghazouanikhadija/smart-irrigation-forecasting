@@ -155,15 +155,15 @@ Model Performance in Tadla Context
 - Strong Generalization: Consistent performance across train/val/test sets
 
 ### Agricultural Impact for Moroccan Agriculture
-*Water Optimization*: Critical for Tadla's limited water resources
+- *Water Optimization*: Critical for Tadla's limited water resources
 
-*Crop Health*: Maintains optimal soil moisture for sugar beet production
+- *Crop Health*: Maintains optimal soil moisture for sugar beet production
 
-*Labor Efficiency*: Reduces manual monitoring in large-scale farms
+- *Labor Efficiency*: Reduces manual monitoring in large-scale farms
 
-*Economic Benefits*: Optimized water usage reduces operational costs
+- *Economic Benefits*: Optimized water usage reduces operational costs
 
-*Sustainability:* Aligns with Morocco's agricultural development strategy
+- *Sustainability:* Aligns with Morocco's agricultural development strategy
 
 ### Usage Examples
 Complete Pipeline Execution with Tadla Data
@@ -191,13 +191,13 @@ The model successfully learned Tadla-specific patterns:
 ### Regional Significance
 This project addresses critical water management challenges in Morocco's agricultural sector:
 
-*Water Scarcity*: Tadla region faces increasing water stress
+- *Water Scarcity*: Tadla region faces increasing water stress
 
-*Climate Change*: Adapting to changing precipitation patterns
+- *Climate Change*: Adapting to changing precipitation patterns
 
-*Food Security*: Optimizing water use for staple crop production
+- *Food Security*: Optimizing water use for staple crop production
 
-Economic Development: Supporting Morocco's agricultural exports
+- *Economic Development*: Supporting Morocco's agricultural exports
 
 ### Citation
 If you use this project in your research, please cite:
@@ -231,7 +231,7 @@ Precision. Efficiency. Sustainability. National Impact.
 
 </div>
 
-Last updated: November 2024
-Performance metrics based on Tadla region test set evaluation
+- Last updated: November 2024
+- Performance metrics based on Tadla region test set evaluation
 *Data period: 2017-2024 from 3 meteorological stations in Tadla, Morocco*
 
