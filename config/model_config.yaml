@@ -1,0 +1,41 @@
+model:
+  name: "lstm_irrigation_predictor"
+  time_steps: 7
+  step_size: 1
+  lstm_units: [64, 32]
+  dropout_rate: 0.2
+  l2_regularization: 0.01
+  learning_rate: 0.001
+
+training:
+  epochs: 100
+  batch_size: 32
+  early_stopping_patience: 20
+  reduce_lr_patience: 10
+  validation_split: 0.2
+  test_split: 0.2
+
+data:
+  target_column: "Besoin_irrigation"
+  feature_columns:
+    - "ET0"
+    - "Pluie" 
+    - "Kc"
+    - "Month"
+    - "DayOfYear"
+    
+  scale_features: true
+
+crops:
+  Betterave_saison:
+    start_month: 10
+    season_length: 120
+    kc_curve: "sigmoid"
+  Betterave_precoce:
+    start_month: 2
+    season_length: 120
+    kc_curve: "sigmoid"
+  Betterave_tardive:
+    start_month: 6
+    season_length: 120
+    kc_curve: "sigmoid"
