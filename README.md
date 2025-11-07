@@ -1,4 +1,4 @@
-# 🌾 Smart Irrigation Forecasting with LSTM Neural Networks
+# Smart Irrigation Forecasting with LSTM Neural Networks
 
 <div align="center">
 
@@ -9,34 +9,25 @@
 ![Agriculture](https://img.shields.io/badge/Domain-Agriculture-brightgreen)
 ![Region](https://img.shields.io/badge/Region-Tadla%2C%20Morocco-orange)
 
-*Optimizing Water Usage through AI-Powered Irrigation Prediction in Tadla, Morocco*
+**Optimizing Water Usage through AI-Powered Irrigation Prediction in Tadla, Morocco**
 
 **R²: 0.522 | Binary Accuracy: 98.0% | MAPE: 38.7%**
 
 </div>
 
-## 📖 Overview
+## Overview
 
 This project implements a sophisticated **Long Short-Term Memory (LSTM)** neural network to predict daily irrigation requirements based on meteorological data from the **Tadla region of Morocco**. The system enables precise water management in agricultural operations, reducing water waste while maintaining optimal crop health through advanced machine learning techniques specifically tailored for Moroccan agricultural conditions.
 
-## 🗺️ Data Source & Region
+## Data Source & Region
 
-### 📍 Geographic Context
+### Geographic Context
 - **Region**: Tadla, Morocco
 - **Agricultural Significance**: Major agricultural zone known for sugar beet, citrus, and cereal production
 - **Climate**: Semi-arid with Mediterranean influences
 - **Water Challenges**: Limited water resources requiring efficient irrigation management
 
-### 🌤️ Meteorological Stations
-Data aggregated from **3 meteorological stations** across the Tadla region:
-
-| Station | Parameters Collected | Period |
-|---------|---------------------|---------|
-| **Dar Oulad Zidouh** | Temperature, Humidity, ET₀, Rainfall | 2017-2024 |
-| **Oulad Illoul** | Solar Radiation, Wind Speed, ET₀ | 2017-2024 |
-| **Ouled Ayad** | Soil Moisture, Precipitation, ET₀ | 2017-2024 |
-
-### 📊 Dataset Characteristics
+### Dataset Characteristics
 - **Temporal Range**: 2017-2024 (7 years of daily data)
 - **Spatial Coverage**: 3 stations across Tadla agricultural perimeter
 - **Key Variables**: 
@@ -47,9 +38,9 @@ Data aggregated from **3 meteorological stations** across the Tadla region:
   - Relative Humidity
   - Wind Speed
 
-## 🎯 Key Results & Performance
+## Key Results & Performance
 
-### 📊 Model Performance Summary
+### Model Performance Summary
 
 | Metric | Training | Validation | Test |
 |--------|----------|------------|------|
@@ -60,15 +51,15 @@ Data aggregated from **3 meteorological stations** across the Tadla region:
 | **sMAPE** | 38.89% | 38.52% | 34.51% |
 | **Binary Accuracy** | 96.51% | 97.06% | **98.04%** |
 
-### 🌱 Agricultural Impact for Tadla Region
+### Agricultural Impact for Tadla Region
 
-- **Zero Irrigation Days**: Reduced from 35% to only **2-3%** through continuous crop rotation
-- **Irrigation Decision Accuracy**: **98%** accuracy in identifying when irrigation is needed
-- **Prediction Quality**: Explains **52.2%** of irrigation need variance in Tadla conditions
-- **Water Savings**: Precise predictions enable **optimized water usage** in water-scarce region
-- **Crop Specific**: Tailored for **Betterave** (sugar beet) cultivation patterns in Morocco
+- **Zero Irrigation Days**: Reduced from 35% to only 2-3% through continuous crop rotation
+- **Irrigation Decision Accuracy**: 98% accuracy in identifying when irrigation is needed
+- **Prediction Quality**: Explains 52.2% of irrigation need variance in Tadla conditions
+- **Water Savings**: Precise predictions enable optimized water usage in water-scarce region
+- **Crop Specific**: Tailored for Betterave (sugar beet) cultivation patterns in Morocco
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Model Architecture
 ```python
@@ -84,7 +75,7 @@ Early stopping (patience=20) preventing overfitting
 
 Comprehensive regularization (Dropout + L2 + Batch Normalization)
 
-🚀 Quick Start
+Quick Start
 Installation
 bash
 # Clone repository
@@ -107,21 +98,21 @@ model, history, results = run_complete_pipeline("merged_meteo.csv")
 # Access results
 test_r2 = results['test']['metrics'][0]  # 0.522
 binary_accuracy = results['test']['metrics'][4]  # 98.04
-📁 Project Structure
+Project Structure
 text
 smart-irrigation-forecasting/
-├── 📁 data/
+├── data/
 │   ├── meteo_dar_oulad_zidouh_DATA_1j.dat
 │   ├── meteo_oulad_illoul_DATA_1j11.dat
 │   └── OULED_AYAD_MTO_DATA_1j.dat
-├── 📁 models/
+├── models/
 │   └── best_lstm_model.keras
-├── 📁 notebooks/
+├── notebooks/
 │   └── 02_complete_irrigation_pipeline.ipynb
-├── 📁 config/
+├── config/
 │   └── model_config.yaml
 └── requirements.txt
-🔧 Key Features & Innovations
+Key Features & Innovations
 1. Tadla-Specific Crop Rotation System
 python
 def feature_engineering_continuous(df):
@@ -150,15 +141,15 @@ Adaptive learning rate with ReduceLROnPlateau
 
 Early stopping based on validation loss
 
-📈 Results Analysis
+Results Analysis
 Model Performance in Tadla Context
-✅ Excellent Binary Classification: 98.04% accuracy in identifying irrigation needs
+Excellent Binary Classification: 98.04% accuracy in identifying irrigation needs
 
-✅ Good Explanatory Power: R² of 0.522 explains majority of variance in regional conditions
+Good Explanatory Power: R² of 0.522 explains majority of variance in regional conditions
 
-✅ Reasonable Prediction Error: MAPE of 38.7% on non-zero values
+Reasonable Prediction Error: MAPE of 38.7% on non-zero values
 
-✅ Strong Generalization: Consistent performance across train/val/test sets
+Strong Generalization: Consistent performance across train/val/test sets
 
 Agricultural Impact for Moroccan Agriculture
 Water Optimization: Critical for Tadla's limited water resources
@@ -171,7 +162,7 @@ Economic Benefits: Optimized water usage reduces operational costs
 
 Sustainability: Aligns with Morocco's agricultural development strategy
 
-🎯 Usage Examples
+Usage Examples
 Complete Pipeline Execution with Tadla Data
 python
 from src.main import run_complete_pipeline
@@ -181,7 +172,7 @@ model, history, results = run_complete_pipeline(
     data_path="merged_meteo.csv",
     target_column="Besoin_irrigation"
 )
-📊 Model Interpretation
+Model Interpretation
 Regional Feature Importance
 The model successfully learned Tadla-specific patterns:
 
@@ -193,7 +184,7 @@ Sugar beet growth cycles adapted to local conditions
 
 Micro-climate variations across the 3 stations
 
-🌍 Regional Significance
+Regional Significance
 This project addresses critical water management challenges in Morocco's agricultural sector:
 
 Water Scarcity: Tadla region faces increasing water stress
@@ -204,7 +195,7 @@ Food Security: Optimizing water use for staple crop production
 
 Economic Development: Supporting Morocco's agricultural exports
 
-🤝 Citation
+Citation
 If you use this project in your research, please cite:
 
 bibtex
@@ -215,10 +206,10 @@ bibtex
   url = {https://github.com/elghazouanikhadija/smart-irrigation-forecasting},
   note = {Meteorological data from 3 stations in Tadla region, Morocco (2017-2024)}
 }
-📄 License
+License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+Acknowledgments
 Office Régional de Mise en Valeur Agricole de Tadla (ORMVAT) for meteorological data
 
 Direction de la Météorologie Nationale (Morocco) for climate data support
@@ -228,7 +219,8 @@ Institut Agronomique et Vétérinaire Hassan II for agricultural expertise
 Farmers and Agricultural Cooperatives in Tadla for practical insights
 
 <div align="center">
-🌟 Star this repository if you find it useful!
+Star this repository if you find it useful!
+
 Building sustainable agriculture in Morocco through artificial intelligence
 Precision. Efficiency. Sustainability. National Impact.
 
@@ -236,4 +228,3 @@ Precision. Efficiency. Sustainability. National Impact.
 Last updated: November 2024
 Performance metrics based on Tadla region test set evaluation
 *Data period: 2017-2024 from 3 meteorological stations in Tadla, Morocco*
-
