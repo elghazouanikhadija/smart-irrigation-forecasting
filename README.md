@@ -98,7 +98,7 @@ test_r2 = results['test']['metrics'][0]  # 0.522
 binary_accuracy = results['test']['metrics'][4]  # 98.04
 ```
 ### Project Structure
-
+``text
 smart-irrigation-forecasting/
 ├── data/
 │   ├── meteo_dar_oulad_zidouh_DATA_1j.dat
@@ -111,7 +111,7 @@ smart-irrigation-forecasting/
 ├── config/
 │   └── model_config.yaml
 └── requirements.txt
-
+``
 ### Key Features & Innovations
 1. Tadla-Specific Crop Rotation System
 ```python
